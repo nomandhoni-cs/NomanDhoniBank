@@ -7,7 +7,7 @@
     <title id="webpage-title">Login - ND Bank Ltd.</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
     <div class="container">
@@ -25,12 +25,56 @@
         </div>
         <!-- Login form End -->
       </div>
-     <div id="dashboard">
-         <h1 class="text-center">Dashboard</h1>
-     </div> 
+      <div id="dashboard">
+        <div class="col-xl-12">
+          <h3 class="text-center">Dashboard</h3>
+        </div>
+        <!-- Account statement start -->
+        <div class="row mt-30">
+          <div class="col-md-4">
+            <div class="deposit common">
+              <h5>Deposit</h5>
+              <h2>$<span id="depositAmount">00</span></h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="withdraw common">
+              <h5>Withdraw</h5>
+              <h2>$<span id="withdrawAmount">00</span></h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="balance common">
+              <h5>Balance</h5>
+              <h2>$<span id="balanceAmount">100</span></h2>
+            </div>
+          </div>
+        </div>
+        <!-- Account statement end -->
+        <!-- Transaction start  -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="depositAmount commonTransaction">
+              <h4>Deposit</h4>
+              <input placeholder="$ Amount you want to Deposit" class="form-control" type="text" name="" id="depositNumber" />
+              <br />
+              <button id="depositButton" class="btn btn-success">Deposit</button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="withdrawAmount commonTransaction">
+              <h4>Withdraw</h4>
+              <input placeholder="$ Amount you want to Withdraw" class="form-control" type="text" name="" id="withdrawNumber" />
+              <br />
+              <button id="withdrawButton" class="btn btn-success">Withdraw</button>
+            </div>
+          </div>
+        </div>
+        <!-- Transaction End -->
+      </div>
     </div>
-    <!-- <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script> -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
   </body>
