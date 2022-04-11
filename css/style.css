@@ -12,8 +12,33 @@ body{
 #dashboard{
     display: none;
 }
+.deposit{
+    background-color: slateblue;
+}
+.withdraw{
+    background-color: lightsalmon;
+}
+.balance{
+    background-color: orange;
+}
+.common{
+    color: white;
+    margin: 0 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.commonTransaction{
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    padding: 50px;
+}
 /* Transaction Area End */
+
 /* Common Css */
+.mt-60{
+    margin-top: 60px;
+}
 .mt-30{
     margin-top: 30px;
 }
