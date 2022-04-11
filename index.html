@@ -4,31 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Account - Dashboard</title>
+    <title id="webpage-title">My Account - Dashboard</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body>
-    <div class="container"></div>
-    <div id="login-area">
-      <h1 class="text-center">Welcome to Noman Dhoni Bank Ltd.</h1>
-      <!-- Login form start -->
-      <div class="login-form">
-        <h3 class="">Login</h3>
-        <br />
-        <input class="form-control" type="email" placeholder="Email" />
-        <br />
-        <input class="form-control" type="password" placeholder="Password" />
-        <br />
-        <button id="loginBtn" class="btn btn-success">Login</button>
+    <div class="container">
+      <div id="login-area">
+        <h1 class="text-center">Welcome to Noman Dhoni Bank Ltd.</h1>
+        <!-- Login form start -->
+        <div class="login-form">
+          <h3 class="">Login</h3>
+          <br />
+          <input class="form-control" type="email" placeholder="Email" />
+          <br />
+          <input class="form-control" type="password" placeholder="Password" />
+          <br />
+          <button id="loginBtn" class="btn btn-success">Login</button>
+        </div>
+        <!-- Login form End -->
       </div>
-      <!-- Login form End -->
+     <div id="dashboard">
+         <h1 class="text-center">Dashboard</h1>
+     </div> 
     </div>
-    <script>
-      var loginButton = document.getElementById("loginBtn");
-      loginButton.addEventListener("click", function (event) {
-        document.getElementById("login-area").style.display = "none";
-      });
-    </script>
+    <!-- <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

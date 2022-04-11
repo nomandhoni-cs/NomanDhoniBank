@@ -8,6 +8,11 @@ body{
     box-shadow: 5px 5px 10px gray;
     padding: 50px;
 }
+/* Transaction Area start */
+#dashboard{
+    display: none;
+}
+/* Transaction Area End */
 /* Common Css */
 .mt-30{
     margin-top: 30px;
