@@ -1,0 +1,14 @@
+
+body{   
+    padding: 100px;
+}
+.login-form{
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    padding: 50px;
+}
+/* Common Css */
+.mt-30{
+    margin-top: 30px;
+}
