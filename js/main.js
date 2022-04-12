@@ -39,6 +39,13 @@ depositButton.addEventListener("click", function () {
   updateSpanText("balanceAmount", depositFloat);
 
   document.getElementById("depositNumber").value = "";
+  
+  // if (balanceAmount < 0 ) {
+  //   const balanceAmountCompare = balanceAmount + (balanceAmount*(-2)) ;
+  //   if (depositAmount > balanceAmountCompare) {
+  //     alert('Congress');
+  //   }
+  // }
 });
 
 //Withdraw Button Handler
