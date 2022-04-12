@@ -39,6 +39,13 @@ depositButton.addEventListener("click", function () {
   updateSpanText("balanceAmount", depositFloat);
 
   document.getElementById("depositNumber").value = "";
+
+  // if (balanceAmount < 0 ) {
+  //   const balanceAmountCompare = balanceAmount + (balanceAmount*(-2)) ;
+  //   if (depositAmount > balanceAmountCompare) {
+  //     alert('Congress');
+  //   }
+  // }
 });
 
 //Withdraw Button Handler
@@ -51,15 +58,8 @@ withdrawButton.addEventListener("click", function () {
   const withdrawFloat = parseFloat(withdrawNumber);
 
   updateSpanText("withdrawAmount", withdrawFloat);
-
-  //Take value from withdraw span tag
-  const balanceAmount = document.getElementById("balanceAmount").innerText;
-  //and make that string into float
-  //innerText value comes as a string
-  const currentBalanceFloat = parseFloat(balanceAmount);
-  const totalBalance = currentBalanceFloat - withdrawFloat;
-  //Show total in Balance span
-  document.getElementById("balanceAmount").innerText = totalBalance;
+  //Below I multiplied with -1 to make number negative
+  updateSpanText("balanceAmount", -1 * withdrawFloat);
   document.getElementById("withdrawNumber").value = "";
   if (totalBalance < 0) {
     alert("You're in loan. Careful!!!");
