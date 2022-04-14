@@ -1,32 +1,139 @@
 /* Normal desktop :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
-
-
 }
-
 
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
-
-
+  .common {
+    color: white;
+    margin: 0 5px;
+    padding: 27px;
+    border-radius: 10px;
+  }
 }
 
- 
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-
-
+  .h1,
+  h1 {
+    font-size: 2rem;
+  }
+  .common {
+    color: white;
+    margin: 0 -9px;
+    padding: 14px;
+    border-radius: 10px;
+  }
+  .h2,
+  h2 {
+    font-size: 1.7rem;
+  }
+  .h5,
+  h5 {
+    font-size: 1.25rem;
+  }
+  .commonTransaction {
+    margin-top: 35px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    padding: 15px;
+  }
+  .h4,
+  h4 {
+    font-size: 1.3rem;
+  }
+  .form-control {
+    font-size: 0.86rem;
+  }
+  .btn {
+    margin-top: -9px;
+  }
 }
 
- 
 /* small mobile :320px. */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
+    
 
- 
-}
- 
+} */
+
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-.container {width:450px}
- 
+  /* .container {
+    width: 450px;
+  } */
+  .login-form {
+    margin-top: 30px;
+    padding: 24px;
+    margin-left: 0%;
+}
+.h1, h1 {
+    font-size: 2rem;
+}
+.h3, h3 {
+    font-size: 1.55rem;
+}
+.common {
+    margin: 10px -75px;
+    padding: 20px;
+}
+h3.text-center {
+    margin-top: -65px;
+}
+h3.miniDisplay.text-center {
+    font-size: 2.5rem;
+}
+.commonTransaction {
+    margin-top: 25px;
+    padding: 23px;
+    width: 134%;
+    margin-left: -16%;
+}
+}
+
+@media (min-width: 425px) and (max-width: 479px) {
+  .login-form {
+    width: 151%;
+    padding: 25px;
+    margin-left: -25%;
+}
+.common {
+  margin: 5px 0px;
+  padding: 11px;
+}
+.miniDisplay {
+  font-size: 2.5rem;
+  margin-top: -55px;
+}
+.commonTransaction {
+  margin-top: 20px;
+  padding: 15px;
+  width: 127%;
+  margin-left: -15%;
+}
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+  .miniDisplay {
+    font-size: 2.5rem;
+    margin-top: -55px;
+    margin-left: -39%;
+  }
+  h1.text-center {
+    font-size: 19px;
+    margin-left: -63px;
+    margin-top: -72px;
+    width: 197%;
+}
+.login-form {
+  border-radius: 10px;
+  padding: 50px;
+  width: 212%;
+  margin-left: -55%;
+}
+.common {
+  margin: 5px -80px;
+}
+.commonTransaction {
+  margin: 5px -90px;
+}
 }
