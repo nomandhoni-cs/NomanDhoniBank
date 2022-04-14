@@ -64,8 +64,7 @@
   .login-form {
     margin-top: 30px;
     padding: 24px;
-    width: 330px;
-    margin-left: -16%;
+    margin-left: 0%;
 }
 .h1, h1 {
     font-size: 2rem;
@@ -92,14 +91,49 @@ h3.miniDisplay.text-center {
 }
 
 @media (min-width: 425px) and (max-width: 479px) {
-    /* .container {
-        width: 163%;
-        padding: 0px;
-        margin-right: auto;
-        margin-left: -69px;
-    } */
-    .login-form {
-        padding: 25px;
-    }
+  .login-form {
+    width: 151%;
+    padding: 25px;
+    margin-left: -25%;
+}
+.common {
+  margin: 5px 0px;
+  padding: 11px;
+}
+.miniDisplay {
+  font-size: 2.5rem;
+  margin-top: -55px;
+}
+.commonTransaction {
+  margin-top: 20px;
+  padding: 15px;
+  width: 127%;
+  margin-left: -15%;
+}
 }
 
+@media (min-width: 320px) and (max-width: 424px) {
+  .miniDisplay {
+    font-size: 2.5rem;
+    margin-top: -55px;
+    margin-left: -39%;
+  }
+  h1.text-center {
+    font-size: 19px;
+    margin-left: -63px;
+    margin-top: -72px;
+    width: 197%;
+}
+.login-form {
+  border-radius: 10px;
+  padding: 50px;
+  width: 212%;
+  margin-left: -55%;
+}
+.common {
+  margin: 5px -80px;
+}
+.commonTransaction {
+  margin: 5px -90px;
+}
+}
